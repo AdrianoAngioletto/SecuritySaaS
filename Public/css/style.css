@@ -50,7 +50,6 @@ body {
 
 header {
     background-color: #1c1c1c;
-    border-bottom: 2px solid #1e90ff;
     padding: 1rem 0;
 }
 
@@ -364,7 +363,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    border-top: 2px solid #1e90ff;
+
 }
 
 footer p {

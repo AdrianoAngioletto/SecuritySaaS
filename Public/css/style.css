@@ -217,10 +217,13 @@ main {
         width: 100%;
     }
 
+  
+
     header .nav-links {
         list-style: none;
         display: flex;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 1rem;
         margin: 0;
         padding: 0;
     }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Safe ™</title>
+    <title data-translate="title">Code Safe ™</title>
     
-    <meta name="description" content="Bem-vindo a Safe Code. Explore segurança e soluções digitais.">
-    <meta name="keywords" content="segurança, tecnologia, infinity, web, soluções">
-    <meta name="author" content="Adriano Angioletto">
+    <meta name="description" content="Bem-vindo a Safe Code. Explore segurança e soluções digitais." data-translate="meta-description">
+    <meta name="keywords" content="segurança, tecnologia, infinity, web, soluções" data-translate="meta-keywords">
+    <meta name="author" content="Adriano Angioletto" data-translate="meta-author">
 
     <!-- Favicon -->
     <link rel="icon" href="./Public/images/bloqueado.png" type="image/x-icon">
@@ -17,23 +17,33 @@
     <link rel="stylesheet" href="./Public/css/style.css">
 
     <!-- JavaScript -->
-    <script defer src="./Public/js/main.js"></script>
+    <script defer src="./Public/js/LanguageSwitcher.js"></script>
 </head>
 
 <body>
-    
+    <!-- bandeiras para alterar idioma -->
+     
+    <div class="language-switcher">
+        <a href="?lang=pt" class="language-link">
+            <img src="./Public/images/flag_brasil.png" alt="Português" class="language-flag">
+        </a>
+        <a href="?lang=en" class="language-link">
+            <img src="./Public/images/americanflag.png" alt="English" class="language-flag">
+        </a>
+    </div>
+
     <!-- Header -->
     <header>
         <nav>
             <div class="logo">
                 <img class='cadeado logo-hero' src="./Public/images/logonav.png" alt="Logo Safe Code">
-                <a  style="color: white;"> Code Safe</a>
+                <a style="color: white;" data-translate="header-logo">Code Safe</a>
             </div>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">Sobre</a></li>
-                <li><a href="/services">Serviços</a></li>
-                <li><a href="/contact">Contato</a></li>
+                <li><a href="/" data-translate="nav-home">Home</a></li>
+                <li><a href="/about" data-translate="nav-about">Sobre</a></li>
+                <li><a href="/services" data-translate="nav-services">Serviços</a></li>
+                <li><a href="/contact" data-translate="nav-contact">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -43,27 +53,27 @@
         <section id="hero">
             <div class="container">
                 <img class='cadeado' src="./Public/images/logo.png" alt="Logo Safe Code">
-                <h1>Bem-vindo ao Code Safe</h1>
-                <p>Soluções em segurança digital que você pode confiar.</p>
-                <p>Para empresas inteligentes que se preocupam com sua segurança e seus investimentos.</p>
-                <a href="/services" class="btn">Saiba Mais</a>
+                <h1 data-translate="hero-title">Bem-vindo ao Code Safe</h1>
+                <p data-translate="hero-description-1">Soluções em segurança digital que você pode confiar.</p>
+                <p data-translate="hero-description-2">Para empresas inteligentes que se preocupam com sua segurança e seus investimentos.</p>
+                <a href="/services" class="btn" data-translate="hero-button">Saiba Mais</a>
             </div>
         </section>
 
         <!-- Team Cards -->
         <section id="team">
             <div class="container">
-                <h2>Nossa Equipe</h2>
+                <h2 data-translate="team-title">Nossa Equipe</h2>
                 <div class="team-cards">
                     <div class="card">
                         <img src="./Public/images/rafael_founder.jpg" alt="Adriano Angioletto">
-                        <h3>Rafael</h3>
-                        <p>CEO / Especialista em Segurança / Founder / <a href="https://bughunters.google.com/profile/d545f001-6c5e-4188-8629-bfaa34ee3f5e"> BugHunterGoogle</a> <a href="https://hackerone.com/lim4"> HackerOne</a> </p>
+                        <h3 data-translate="team-rafael-name">Rafael</h3>
+                        <p data-translate="team-rafael-info">CEO / Especialista em Segurança / Founder / <a href="https://bughunters.google.com/profile/d545f001-6c5e-4188-8629-bfaa34ee3f5e"> BugHunterGoogle</a> <a href="https://hackerone.com/lim4"> HackerOne</a></p>
                     </div>
                     <div class="card">
                         <img src="./Public/images/adriano_angioletto.jpg" alt="Especialista Dev">
-                        <h3>Adriano Angioletto</h3>
-                        <p>Founder / Dev</p>
+                        <h3 data-translate="team-adriano-name">Adriano Angioletto</h3>
+                        <p data-translate="team-adriano-info">Founder / Dev</p>
                     </div>
                 </div>
             </div>
@@ -71,18 +81,16 @@
 
         <section id="features">
             <div class="container">
-                <h2>Nossas Soluções</h2>
+                <h2 data-translate="features-title">Nossas Soluções</h2>
                 <div class="feature-list">
                     <div class="feature">
-                        <h3>Consultoria em Segurança</h3>
-                        <p>Ajudamos sua empresa a se proteger contra ameaças digitais.</p>
+                        <h3 data-translate="feature-consulting-title">Consultoria em Segurança</h3>
+                        <p data-translate="feature-consulting-description">Ajudamos sua empresa a se proteger contra ameaças digitais.</p>
                     </div>
 
-                  
-
                     <div class="feature">
-                        <h3>Análise de Vulnerabilidades</h3>
-                        <p>Identificamos e corrigimos pontos fracos no seu sistema.</p>
+                        <h3 data-translate="feature-vulnerability-title">Análise de Vulnerabilidades</h3>
+                        <p data-translate="feature-vulnerability-description">Identificamos e corrigimos pontos fracos no seu sistema.</p>
                     </div>
                 </div>
             </div>
@@ -92,11 +100,11 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Code Safe. Todos os direitos reservados.</p>
+            <p data-translate="footer-copyright">&copy; 2025 Code Safe. Todos os direitos reservados.</p>
             <ul class="social-links">
-                <li><a href="#">????</a></li>
-                <li><a href="#">???</a></li>
-                <li><a href="#">???</a></li>
+                <li><a href="#" data-translate="footer-social-1">Facebook</a></li>
+                <li><a href="#" data-translate="footer-social-2">Twitter</a></li>
+                <li><a href="#" data-translate="footer-social-3">Instagram</a></li>
             </ul>
         </div>
     </footer>

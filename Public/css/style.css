@@ -396,3 +396,49 @@ footer .social-links a:hover {
         width: 100%;
     }
 }
+
+
+/* Estilo para o seletor de idioma */
+.language-switcher {
+    display: flex;
+    justify-content: flex-end; /* Alinha as bandeiras à direita */
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1c1c1c;
+
+}
+
+.language-link {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.language-flag {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-flag:hover {
+    transform: rotate(10deg);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .language-switcher {
+        justify-content: center; /* Centraliza as bandeiras em telas menores */
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .language-flag {
+        width: 30px; /* Reduz o tamanho das bandeiras em telas menores */
+    }
+}

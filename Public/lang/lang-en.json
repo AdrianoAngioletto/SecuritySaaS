@@ -1,0 +1,34 @@
+{
+    "title": "Code Safe ™",
+    "meta-description": "Welcome to Code Safe. Explore security and digital solutions.",
+    "meta-keywords": "security, technology, infinity, web, solutions",
+    "meta-author": "Adriano Angioletto",
+
+    "header-logo": "Code Safe",
+    "nav-home": "Home",
+    "nav-about": "About",
+    "nav-services": "Services",
+    "nav-contact": "Contact",
+
+    "hero-title": "Welcome to Code Safe",
+    "hero-description-1": "Solutions in digital security you can trust.",
+    "hero-description-2": "For smart companies that care about their security and investments.",
+    "hero-button": "Learn More",
+
+    "team-title": "Our Team",
+    "team-rafael-name": "Rafael",
+    "team-rafael-info": "CEO / Security Specialist / Founder / <a href='https://bughunters.google.com/profile/d545f001-6c5e-4188-8629-bfaa34ee3f5e'>BugHunterGoogle</a> <a href='https://hackerone.com/lim4'>HackerOne</a>",
+    "team-adriano-name": "Adriano Angioletto",
+    "team-adriano-info": "Founder / Dev",
+
+    "features-title": "Our Solutions",
+    "feature-consulting-title": "Security Consulting",
+    "feature-consulting-description": "We help your business protect itself from digital threats.",
+    "feature-vulnerability-title": "Vulnerability Analysis",
+    "feature-vulnerability-description": "We identify and fix weaknesses in your system.",
+
+    "footer-copyright": "&copy; 2025 Code Safe. All rights reserved.",
+    "footer-social-1": "Facebook",
+    "footer-social-2": "Twitter",
+    "footer-social-3": "Instagram"
+}

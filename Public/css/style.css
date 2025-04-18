@@ -100,10 +100,22 @@ main {
 }
 
 #hero {
-    background: linear-gradient(45deg, #1e90ff, #1c1c1c);
+    background: url('../images/gif_cyber.gif') no-repeat center center;
+    background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-overlay {
+    background: rgba(0, 0, 0, 0.861);
+    padding: 2rem;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
 }
 
 #hero h1 {
@@ -152,7 +164,6 @@ main {
     gap: 2rem;
 }
 
-
 .feature {
     background-color: #2b2b2b;
     border-radius: 15px;
@@ -184,7 +195,6 @@ main {
     opacity: 1;
 }
 
-/* Conteúdo do card de soluções */
 .feature h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -200,12 +210,10 @@ main {
     z-index: 1;
 }
 
-
 .feature:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 @media (max-width: 768px) {
     .feature-list {
@@ -217,8 +225,6 @@ main {
         width: 100%;
     }
 
-  
-
     header .nav-links {
         list-style: none;
         display: flex;
@@ -228,7 +234,6 @@ main {
         padding: 0;
     }
 }
-
 
 footer {
     background-color: #1c1c1c;
@@ -262,10 +267,6 @@ footer .social-links a:hover {
     color: #fff;
 }
 
-
-/* Estilo da seção da equipe */
-
-
 #team {
     text-align: center;
     padding: 2rem 1rem;
@@ -285,7 +286,6 @@ footer .social-links a:hover {
     gap: 2rem;
     flex-wrap: wrap;
 }
-
 
 .card {
     background-color: #2b2b2b;
@@ -318,7 +318,6 @@ footer .social-links a:hover {
     opacity: 1;
 }
 
-
 .card img {
     width: 100px;
     height: 100px;
@@ -345,19 +344,17 @@ footer .social-links a:hover {
     z-index: 1;
 }
 
-
 .card p a {
-    color: #1e90ff; 
+    color: #1e90ff;
     text-decoration: none;
-    font-weight: bold; 
-    position: relative; 
+    font-weight: bold;
+    position: relative;
     transition: color 0.3s ease;
 }
 
 .card p a:hover {
-    color: #ff1493; 
+    color: #ff1493;
 }
-
 
 .card p a::after {
     content: '';
@@ -366,25 +363,22 @@ footer .social-links a:hover {
     bottom: -3px;
     width: 0;
     height: 2px;
-    background: linear-gradient(45deg, #1e90ff, #ff1493); 
-    transition: width 0.3s ease; 
+    background: linear-gradient(45deg, #1e90ff, #ff1493);
+    transition: width 0.3s ease;
 }
 
 .card p a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
-
 
 .card p a:not(:last-child) {
-    margin-right: 0.5rem; 
+    margin-right: 0.5rem;
 }
-
 
 .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 @media (max-width: 768px) {
     .team-cards {
@@ -397,15 +391,12 @@ footer .social-links a:hover {
     }
 }
 
-
-/* Estilo para o seletor de idioma */
 .language-switcher {
     display: flex;
-    justify-content: flex-end; /* Alinha as bandeiras à direita */
+    justify-content: flex-end;
     gap: 1rem;
     padding: 1rem;
     background-color: #1c1c1c;
-
 }
 
 .language-link {
@@ -430,15 +421,14 @@ footer .social-links a:hover {
     transform: rotate(10deg);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .language-switcher {
-        justify-content: center; /* Centraliza as bandeiras em telas menores */
+        justify-content: center;
         gap: 0.5rem;
         padding: 0.5rem;
     }
 
     .language-flag {
-        width: 30px; /* Reduz o tamanho das bandeiras em telas menores */
+        width: 30px;
     }
 }

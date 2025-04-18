@@ -15,9 +15,11 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./Public/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- JavaScript -->
     <script defer src="./Public/js/LanguageSwitcher.js"></script>
+    <script defer src="./Public/js/ToggleMenu.js"></script>
 </head>
 
 <body>
@@ -36,16 +38,25 @@
     <header>
         <nav>
             <div class="logo">
-                <img class='cadeado logo-hero' src="./Public/images/logonav.png" alt="Logo Safe Code">
+                <img class="cadeado logo-hero" src="./Public/images/logonav.png" alt="Logo Safe Code">
                 <a style="color: white;" data-translate="header-logo">Code Safe</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="/" data-translate="nav-home">Home</a></li>
-                <li><a href="/about" data-translate="nav-about">Sobre</a></li>
-                <li><a href="/services" data-translate="nav-services">Serviços</a></li>
-                <li><a href="/contact" data-translate="nav-contact">Contato</a></li>
+            <!-- Botão hamburguer -->
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <!-- Menu de navegação -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/"><i class="icon fas fa-home"></i> <span data-translate="nav-home">Home</span></a></li>
+                <li><a href="/"><i class="icon fas fa-info-circle"></i> <span data-translate="nav-about">Sobre</span></a></li>
+                <li><a href="/"><i class="icon fas fa-cogs"></i> <span data-translate="nav-services">Serviços</span></a></li>
+                <li><a href="/"><i class="icon fas fa-envelope"></i> <span data-translate="nav-contact">Contato</span></a></li>
             </ul>
         </nav>
+        <!-- Overlay escuro -->
+        <div class="overlay" id="overlay"></div>
     </header>
 
     <!-- Main Content -->

@@ -26,6 +26,9 @@
     "feature-consulting-description": "We help your business protect itself from digital threats.",
     "feature-vulnerability-title": "Vulnerability Analysis",
     "feature-vulnerability-description": "We identify and fix weaknesses in your system.",
+    "feature-pentest-title": "Pentest",
+    "feature-pentest-description": "Want to know how your app is doing? Lock the doors to keep intruders out!",
+
 
     "footer-copyright": "&copy; 2025 Code Safe. All rights reserved.",
     "footer-social-1": "Facebook",

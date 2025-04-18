@@ -1,20 +1,56 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo-text:hover {
+    color: #007bff;
+}
+
+.cadeado {
+    width: 100px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadeado:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #1c1c1c;
     color: #fff;
     line-height: 1.6;
 }
 
 header {
-    background-color: #000; 
-    border-bottom: 2px solid #1e90ff; 
+    background-color: #1c1c1c;
+    border-bottom: 2px solid #1e90ff;
     padding: 1rem 0;
 }
 
@@ -24,20 +60,28 @@ header nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 header .logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #1e90ff; /* Texto azul */
+    color: #1e90ff;
     text-decoration: none;
 }
 
 header .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 10rem;
+    margin: 0;
+    padding: 0;
 }
 
 header .nav-links a {
@@ -48,7 +92,7 @@ header .nav-links a {
 }
 
 header .nav-links a:hover {
-    color: #1e90ff; /* Efeito azul ao passar o mouse */
+    color: #1e90ff;
 }
 
 main {
@@ -56,7 +100,7 @@ main {
 }
 
 #hero {
-    background: linear-gradient(45deg, #1e90ff, #000); 
+    background: linear-gradient(45deg, #1e90ff, #1c1c1c);
     color: #fff;
     text-align: center;
     padding: 4rem 1rem;
@@ -74,7 +118,7 @@ main {
 
 #hero .btn {
     display: inline-block;
-    background-color: #1e90ff; 
+    background-color: #1e90ff;
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
@@ -84,49 +128,110 @@ main {
 }
 
 #hero .btn:hover {
-    background-color: #0066cc; 
+    background-color: #0066cc;
 }
 
 #features {
     margin-top: 2rem;
     text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1c1c1c;
+    color: #fff;
 }
 
 #features h2 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #1e90ff;
+    margin-bottom: 2rem;
+    color: #ffffff;
 }
 
 .feature-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
+
 
 .feature {
-    background-color: #111; 
-    border: 1px solid #1e90ff;
-    border-radius: 10px;
+    background-color: #2b2b2b;
+    border-radius: 15px;
     padding: 1.5rem;
-    width: 300px;
+    width: 280px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
 }
 
+.feature::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #1e90ff, #ff1493);
+    z-index: 0;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature:hover::before {
+    opacity: 1;
+}
+
+/* Conteúdo do card de soluções */
 .feature h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #1e90ff;
+    color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .feature p {
     font-size: 1rem;
     color: #ddd;
+    position: relative;
+    z-index: 1;
 }
 
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 768px) {
+    .feature-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+  
+
+    header .nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 footer {
-    background-color: #000;
+    background-color: #1c1c1c;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -142,14 +247,152 @@ footer .social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 footer .social-links a {
     color: #1e90ff;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 footer .social-links a:hover {
     color: #fff;
+}
+
+
+/* Estilo da seção da equipe */
+
+
+#team {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+#team h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #1e90ff, #ff1493);
+    z-index: 0;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 2px solid #1e90ff;
+    position: relative;
+    z-index: 1;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ddd;
+    position: relative;
+    z-index: 1;
+}
+
+
+.card p a {
+    color: #1e90ff; 
+    text-decoration: none;
+    font-weight: bold; 
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+.card p a:hover {
+    color: #ff1493; 
+}
+
+
+.card p a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #1e90ff, #ff1493); 
+    transition: width 0.3s ease; 
+}
+
+.card p a:hover::after {
+    width: 100%; 
+}
+
+
+.card p a:not(:last-child) {
+    margin-right: 0.5rem; 
+}
+
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 768px) {
+    .team-cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+    }
 }

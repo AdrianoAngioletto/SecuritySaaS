@@ -52,7 +52,7 @@
                 <li><a href="/"><i class="icon fas fa-home"></i> <span data-translate="nav-home">Home</span></a></li>
                 <li><a href="/"><i class="icon fas fa-info-circle"></i> <span data-translate="nav-about">Sobre</span></a></li>
                 <li><a href="/"><i class="icon fas fa-cogs"></i> <span data-translate="nav-services">Serviços</span></a></li>
-                <li><a href="/"><i class="icon fas fa-envelope"></i> <span data-translate="nav-contact">Contato</span></a></li>
+                <li><a href="./App/Views/contato/contato.php"><i class="icon fas fa-envelope"></i> <span data-translate="nav-contact">Contato</span></a></li>
             </ul>
         </nav>
         <!-- Overlay escuro -->

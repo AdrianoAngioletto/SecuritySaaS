@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title data-translate="title">Code Safe ™</title>
+    <title data-translate="title">CodeSafe™</title>
     
     <meta name="description" content="Bem-vindo a Safe Code. Explore segurança e soluções digitais." data-translate="meta-description">
     <meta name="keywords" content="segurança, tecnologia, infinity, web, soluções" data-translate="meta-keywords">
@@ -15,9 +15,11 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./Public/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- JavaScript -->
     <script defer src="./Public/js/LanguageSwitcher.js"></script>
+    <script defer src="./Public/js/ToggleMenu.js"></script>
 </head>
 
 <body>
@@ -36,16 +38,25 @@
     <header>
         <nav>
             <div class="logo">
-                <img class='cadeado logo-hero' src="./Public/images/logonav.png" alt="Logo Safe Code">
+                <img class="cadeado logo-hero" src="./Public/images/logonav.png" alt="Logo Safe Code">
                 <a style="color: white;" data-translate="header-logo">Code Safe</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="/" data-translate="nav-home">Home</a></li>
-                <li><a href="/about" data-translate="nav-about">Sobre</a></li>
-                <li><a href="/services" data-translate="nav-services">Serviços</a></li>
-                <li><a href="/contact" data-translate="nav-contact">Contato</a></li>
+            <!-- Botão hamburguer -->
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <!-- Menu de navegação -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/"><i class="icon fas fa-home"></i> <span data-translate="nav-home">Home</span></a></li>
+                <li><a href="/"><i class="icon fas fa-info-circle"></i> <span data-translate="nav-about">Sobre</span></a></li>
+                <li><a href="/"><i class="icon fas fa-cogs"></i> <span data-translate="nav-services">Serviços</span></a></li>
+                <li><a href="./App/Views/contato/contato.php"><i class="icon fas fa-envelope"></i> <span data-translate="nav-contact">Contato</span></a></li>
             </ul>
         </nav>
+        <!-- Overlay escuro -->
+        <div class="overlay" id="overlay"></div>
     </header>
 
     <!-- Main Content -->
@@ -67,7 +78,7 @@
                 <div class="team-cards">
                     <div class="card">
                         <img src="./Public/images/rafael_founder.jpg" alt="Adriano Angioletto">
-                        <h3 data-translate="team-rafael-name">Rafael</h3>
+                        <h3 data-translate="team-rafael-name">Rafael Lima</h3>
                         <p data-translate="team-rafael-info">CEO | Especialista em Segurança | Founder | <a href="https://bughunters.google.com/profile/d545f001-6c5e-4188-8629-bfaa34ee3f5e"> BugHunterGoogle</a> - <a href="https://hackerone.com/lim4"> HackerOne</a></p>
                     </div>
                     <div class="card">
@@ -89,8 +100,13 @@
                     </div>
 
                     <div class="feature">
+                        <h3 data-translate="feature-pentest-title">Pentest</h3>
+                        <p data-translate="feature-pentest-description">Quer saber como está o seu app? Feche as portas para os invasores!</p>
+                    </div>
+
+                    <div class="feature">
                         <h3 data-translate="feature-vulnerability-title">Análise de Vulnerabilidades</h3>
-                        <p data-translate="feature-vulnerability-description">Identificamos e corrigimos pontos fracos no seu sistema.</p>
+                        <p data-translate="feature-vulnerability-description">Identificamos os pontos fracos no seu sistema.</p>
                     </div>
                 </div>
             </div>
